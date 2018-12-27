@@ -2,9 +2,9 @@
 	<div class="users">
 		<h1>User组件</h1>
 		<ul>
-			<li v-for="user in users" v-on:click="user.show=!user.show">
-				<h2>{{user.name}}</h2>
-				<h3 v-show="user.show">{{user.position}}</h3>
+			<li v-for="user in users">
+				<h3>{{user.name}}</h3>
+				<h5>{{user.email}}</h5>
 			</li>
 		</ul>
 		<button v-on:click="deleteUser">删除</button>
@@ -55,8 +55,11 @@ li{
 	flex-grow: 1;
 	flex-basis: 200px;
 	text-align: center;
-	padding: 30px;
+	padding: 5px;
 	margin: 5px;
 	border: 1px solid #333333;
+}
+h3,h5{
+	margin:5px auto;
 }
 </style>

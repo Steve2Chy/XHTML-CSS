@@ -22,8 +22,8 @@ export default {
 		  //this.msg = "值变了";
 		  this.$emit("msgChange","子向父组件传值");
 	  }
-  },
-  beforeCreate:function(){
+  }
+  /* beforeCreate:function(){
   	alert("组件实例化之前执行的函数");
   },
   created:function(){
@@ -46,7 +46,7 @@ export default {
   },
   destroyed:function(){
 	alert("组件销毁");
-  }
+  } */
 }
 </script>
 
