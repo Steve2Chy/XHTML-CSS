@@ -31,5 +31,5 @@ new Vue({
 	template: '<App/>',
 	components: { App }
 })
-
+//访问模式
 // index.html -> main.js -> App.vue
